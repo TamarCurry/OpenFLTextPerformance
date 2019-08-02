@@ -1,7 +1,6 @@
 package;
 
 import openfl.Lib;
-import openfl.StopWatch;
 import openfl.display.Shape;
 import openfl.display.Sprite;
 import openfl.events.Event;
@@ -151,7 +150,6 @@ class Main extends Sprite
 	// -------------------------------------------------------------------------------------
 	private function appendText(e:MouseEvent):Void
 	{
-		StopWatch.count = 0;
 		var startTime:Int = Lib.getTimer();
 		textField.appendText(textToWrite);
 		textField.scrollV = textField.maxScrollV;
