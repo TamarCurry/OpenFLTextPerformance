@@ -1,0 +1,5 @@
+Please note that the classes included in that folder were altered from the official OpenFL 8.9.1 release.
+
+Approximately 30-50% of this is due to calling __context.measureText(...) so often in order to retrieve character widths. I managed to find a work around by caching the character widths in an array of floats (var name "__sizes") and using that instead. This works as long as there is only one TextFormat for the entire TextField and only when appending to existing text, otherwise the array is not used. You can view this implementation in the "test" folder included in this project.
+
+I've only tested these changes locally for a short period of time, so I don't think it wise to make an official pull request for these yet.
