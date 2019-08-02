@@ -154,7 +154,7 @@ class Main extends Sprite
 		textField.appendText(textToWrite);
 		textField.scrollV = textField.maxScrollV;
 		var endTime:Int = Lib.getTimer();
-		var text:String = "Total time to append: " + (endTime - startTime) + " ms.";
+		var text:String = "Time to append: " + (endTime - startTime) + " ms.";
 		resultsTextField.htmlText = "<p align='center'><font size='14'>" + text + "</font></p>";
 	}
 	
@@ -165,7 +165,7 @@ class Main extends Sprite
 		textField.text = "";
 		textField.scrollV = textField.maxScrollV;
 		var endTime:Int = Lib.getTimer();
-		var text:String = "Total time to clear: " + (endTime - startTime) + " ms.";
+		var text:String = "Time to clear: " + (endTime - startTime) + " ms.";
 		resultsTextField.htmlText = "<p align='center'><font size='14'>" + text + "</font></p>";
 	}
 }
