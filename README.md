@@ -2,7 +2,7 @@
 
 BUG BOUNTY - $25 TO IMPROVE PERFORMANCE WITH OPENFL TEXTFIELDS
 
-Included in this repo is a simple test case that illustrates the issue. Source code can be found in src/Main.hx.
+Included in this repo is a simple test case that illustrates the issue. Source code can be found in src/Main.hx or you can try it out at http://tamarcurry.com/openFLTextPerformance/
 
 In HTML5 builds of OpenFL projects, there is significant slowdown when using the appendText(...) function in openfl.text.TextField when displaying large amounts of text.
 
